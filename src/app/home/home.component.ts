@@ -7,7 +7,7 @@ import { Component, OnInit, Input, DoCheck, OnChanges, AfterContentInit, AfterCo
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnInit, DoCheck, OnChanges, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
-
+  @Input() public message: string;
   public count: number;
   @ViewChild('h1', { read: ElementRef, static: true }) public h1: ElementRef;
 
